@@ -9,20 +9,22 @@ class TruthTable {
     }
 
     generate() {
-        for (let index = 0; index < this.combinations; index += 1) {
-            const binary = parseInt(index, 10)
-                .toString(2)
-                .padStart(this.propositions, '0');
-            this.addRow(binary, index);
-        }
+        const inputs = Array(this.combinations).fill(false);
+
+        this.inputs = inputs.map((value, index) => this.addRow(index));
     }
 
-    addRow(string, col) {
-        this.inputs.push([]);
+    dec2bin(number) {
+        return parseInt(number, 10)
+            .toString(2)
+            .padStart(this.propositions, '0');
+    }
 
-        for (let index = 0; index < this.propositions; index += 1) {
-            this.inputs[col].push(string.substr(index, 1) === '1');
-        }
+    addRow(row) {
+        const binary = this.dec2bin(row);
+        const inputs = Array(this.propositions).fill(false);
+
+        return inputs.map((value, index) => binary.substr(index, 1) === '1');
     }
 
     get and() {

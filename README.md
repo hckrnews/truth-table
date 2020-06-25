@@ -1,8 +1,8 @@
-# Hack JavaScript objects
+# Truth Table package
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
-Get a flat version of the object
+Generate a truth table very easy.
 
 ## Installation
 
