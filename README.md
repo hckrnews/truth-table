@@ -20,6 +20,8 @@ or
 
 Example usage:
 ```
+import TruthTable from "@hckrnews/truth-table";
+
 const table = TruthTable.create(3);
 ```
 
