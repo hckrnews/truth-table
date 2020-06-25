@@ -26,75 +26,35 @@ class TruthTable {
     }
 
     get and() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push(row.every(Boolean));
-        });
-
-        return result;
+        return this.inputs.map(row => row.every(Boolean));
     }
 
     get nand() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push(!row.every(Boolean));
-        });
-
-        return result;
+        return this.inputs.map(row => !row.every(Boolean));
     }
 
     get or() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push(row.some(Boolean));
-        });
-
-        return result;
+        return this.inputs.map(row => row.some(Boolean));
     }
 
     get nor() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push(!row.some(Boolean));
-        });
-
-        return result;
+        return this.inputs.map(row => !row.some(Boolean));
     }
 
     get andWithInputs() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push([row.every(Boolean), ...row]);
-        });
-
-        return result;
+        return this.inputs.map(row => [row.every(Boolean), ...row]);
     }
 
     get orWithInputs() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push([row.some(Boolean), ...row]);
-        });
-
-        return result;
+        return this.inputs.map(row => [row.some(Boolean), ...row]);
     }
 
     get nandWithInputs() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push([!row.every(Boolean), ...row]);
-        });
-
-        return result;
+        return this.inputs.map(row => [!row.every(Boolean), ...row]);
     }
 
     get norWithInputs() {
-        const result = [];
-        this.inputs.forEach(row => {
-            result.push([!row.some(Boolean), ...row]);
-        });
-
-        return result;
+        return this.inputs.map(row => [!row.some(Boolean), ...row]);
     }
 
     static create(propositions) {
