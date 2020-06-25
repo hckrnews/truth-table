@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/truth-table",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "main": "src/TruthTable.mjs",
     "files": [
@@ -37,6 +37,10 @@
         "jest": "^25.4.0",
         "jscpd": "^3.2.1",
         "prettier": "1.19.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hckrnews/truth-table"
     },
     "engines": {
         "node": ">=14"
