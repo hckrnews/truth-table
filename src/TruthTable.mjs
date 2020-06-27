@@ -39,16 +39,30 @@ class TruthTable {
         return this.inputs.map(row => row.some(Boolean));
     }
 
+    get xor() {
+        return this.inputs.map(row => this.totalTrueInputs(row) % 2 === 1);
+    }
+
+    get xnor() {
+        return this.inputs.map(row => this.totalTrueInputs(row) % 2 === 0);
+    }
+
+    totalTrueInputs(row) {
+        return row.reduce(
+            (accumulator, currentValue) => accumulator + (currentValue ? 1 : 0)
+        );
+    }
+
     get nor() {
         return this.inputs.map(row => !row.some(Boolean));
     }
 
-    get andWithInputs() {
-        return this.inputs.map(row => [row.every(Boolean), ...row]);
-    }
-
     get orWithInputs() {
         return this.inputs.map(row => [row.some(Boolean), ...row]);
+    }
+
+    get andWithInputs() {
+        return this.inputs.map(row => [row.every(Boolean), ...row]);
     }
 
     get nandWithInputs() {
