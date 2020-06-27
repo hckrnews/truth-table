@@ -4,7 +4,9 @@
     "description": "",
     "main": "src/TruthTable.mjs",
     "files": [
-        "src/TruthTable.js"
+        "src/TruthTable.mjs",
+        "src/Helper.js",
+        "src/InvalidInputError.js"
     ],
     "type": "module",
     "license": "AGPL-3.0",

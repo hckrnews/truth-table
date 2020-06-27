@@ -1,5 +1,15 @@
+import Helper from './Helper';
+import InvalidInputError from './InvalidInputError';
+
 class TruthTable {
     constructor(propositions) {
+        if (!Number.isInteger(propositions)) {
+            throw new InvalidInputError(
+                propositions,
+                'propositions isnt a number'
+            );
+        }
+
         this.propositions = propositions;
         this.inputs = [];
     }
@@ -14,14 +24,8 @@ class TruthTable {
         this.inputs = inputs.map((value, index) => this.addRow(index));
     }
 
-    dec2bin(number) {
-        return parseInt(number, 10)
-            .toString(2)
-            .padStart(this.propositions, '0');
-    }
-
     addRow(row) {
-        const binary = this.dec2bin(row);
+        const binary = Helper.dec2bin(row, this.propositions);
         const inputs = Array(this.propositions).fill(false);
 
         return inputs.map((value, index) => binary.substr(index, 1) === '1');
@@ -44,17 +48,11 @@ class TruthTable {
     }
 
     get xor() {
-        return this.inputs.map(row => this.totalTrueInputs(row) % 2 === 1);
+        return this.inputs.map(row => Helper.totalTrueInputs(row) % 2 === 1);
     }
 
     get xnor() {
-        return this.inputs.map(row => this.totalTrueInputs(row) % 2 === 0);
-    }
-
-    totalTrueInputs(row) {
-        return row.reduce(
-            (accumulator, currentValue) => accumulator + (currentValue ? 1 : 0)
-        );
+        return this.inputs.map(row => Helper.totalTrueInputs(row) % 2 === 0);
     }
 
     get andWithInputs() {
@@ -75,14 +73,14 @@ class TruthTable {
 
     get xorWithInputs() {
         return this.inputs.map(row => [
-            this.totalTrueInputs(row) % 2 === 1,
+            Helper.totalTrueInputs(row) % 2 === 1,
             ...row,
         ]);
     }
 
     get xnorWithInputs() {
         return this.inputs.map(row => [
-            this.totalTrueInputs(row) % 2 === 0,
+            Helper.totalTrueInputs(row) % 2 === 0,
             ...row,
         ]);
     }
