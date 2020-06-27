@@ -39,6 +39,10 @@ class TruthTable {
         return this.inputs.map(row => row.some(Boolean));
     }
 
+    get nor() {
+        return this.inputs.map(row => !row.some(Boolean));
+    }
+
     get xor() {
         return this.inputs.map(row => this.totalTrueInputs(row) % 2 === 1);
     }
@@ -53,14 +57,6 @@ class TruthTable {
         );
     }
 
-    get nor() {
-        return this.inputs.map(row => !row.some(Boolean));
-    }
-
-    get orWithInputs() {
-        return this.inputs.map(row => [row.some(Boolean), ...row]);
-    }
-
     get andWithInputs() {
         return this.inputs.map(row => [row.every(Boolean), ...row]);
     }
@@ -69,8 +65,26 @@ class TruthTable {
         return this.inputs.map(row => [!row.every(Boolean), ...row]);
     }
 
+    get orWithInputs() {
+        return this.inputs.map(row => [row.some(Boolean), ...row]);
+    }
+
     get norWithInputs() {
         return this.inputs.map(row => [!row.some(Boolean), ...row]);
+    }
+
+    get xorWithInputs() {
+        return this.inputs.map(row => [
+            this.totalTrueInputs(row) % 2 === 1,
+            ...row,
+        ]);
+    }
+
+    get xnorWithInputs() {
+        return this.inputs.map(row => [
+            this.totalTrueInputs(row) % 2 === 0,
+            ...row,
+        ]);
     }
 
     static create(propositions) {

@@ -78,7 +78,11 @@ All options:
 * or
 * orWithInputs
 * nor
-* notWithInputs
+* norWithInputs
+* xor
+* xorWithInputs
+* xnor
+* xnorWithInputs
 
 [npm-url]: https://www.npmjs.com/package/@hckrnews/truth-table
 [npm-image]: https://img.shields.io/npm/v/@hckrnews/truth-table.svg
