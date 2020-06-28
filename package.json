@@ -1,10 +1,17 @@
 {
     "name": "@hckrnews/truth-table",
-    "version": "1.1.0",
+    "version": "2.0.0",
     "description": "",
     "main": "src/TruthTable.mjs",
     "files": [
         "src/TruthTable.mjs",
+        "src/BaseTruthTable.mjs",
+        "src/AndTruthTable.mjs",
+        "src/NandTruthTable.mjs",
+        "src/OrTruthTable.mjs",
+        "src/NorTruthTable.mjs",
+        "src/XorTruthTable.mjs",
+        "src/XnorTruthTable.mjs",
         "src/Helper.js",
         "src/InvalidInputError.js"
     ],

@@ -1,4 +1,4 @@
-import TruthTable from '../../src/TruthTable.mjs';
+import { OrTruthTable } from '../../src/TruthTable.mjs';
 
 const TestCasesResult = [
     {
@@ -44,8 +44,8 @@ describe.each(TestCasesResult)(
     'Test or',
     ({ description, input, expectedResult }) => {
         it(description, () => {
-            const table = TruthTable.create(input);
-            expect(table.or).toMatchObject(expectedResult);
+            const table = OrTruthTable.create(input);
+            expect(table.output).toMatchObject(expectedResult);
         });
     }
 );

@@ -55,7 +55,7 @@ const TestCasesResult = [
 ];
 
 describe.each(TestCasesResult)(
-    'Test result',
+    'Test inputs generator',
     ({ description, input, expectedResult }) => {
         it(description, () => {
             const table = TruthTable.create(input);

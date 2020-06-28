@@ -1,4 +1,4 @@
-import TruthTable from '../../src/TruthTable.mjs';
+import { XnorTruthTable } from '../../src/TruthTable.mjs';
 
 const TestCasesResult = [
     {
@@ -61,8 +61,8 @@ describe.each(TestCasesResult)(
     'Test xnor',
     ({ description, input, expectedResult }) => {
         it(description, () => {
-            const table = TruthTable.create(input);
-            expect(table.xnor).toMatchObject(expectedResult);
+            const table = XnorTruthTable.create(input);
+            expect(table.output).toMatchObject(expectedResult);
         });
     }
 );

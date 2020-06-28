@@ -1,4 +1,4 @@
-import TruthTable from '../../src/TruthTable.mjs';
+import { XorTruthTable } from '../../src/TruthTable.mjs';
 
 const TestCasesResult = [
     {
@@ -61,8 +61,8 @@ describe.each(TestCasesResult)(
     'Test xor with inputs',
     ({ description, input, expectedResult }) => {
         it(description, () => {
-            const table = TruthTable.create(input);
-            expect(table.xorWithInputs).toMatchObject(expectedResult);
+            const table = XorTruthTable.create(input);
+            expect(table.result).toMatchObject(expectedResult);
         });
     }
 );
