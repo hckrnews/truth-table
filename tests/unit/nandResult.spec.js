@@ -1,4 +1,4 @@
-import TruthTable from '../../src/TruthTable.mjs';
+import { NandTruthTable } from '../../src/TruthTable.mjs';
 
 const TestCasesResult = [
     {
@@ -61,8 +61,8 @@ describe.each(TestCasesResult)(
     'Test nand with inputs',
     ({ description, input, expectedResult }) => {
         it(description, () => {
-            const table = TruthTable.create(input);
-            expect(table.nandWithInputs).toMatchObject(expectedResult);
+            const table = NandTruthTable.create(input);
+            expect(table.result).toMatchObject(expectedResult);
         });
     }
 );

@@ -20,9 +20,9 @@ or
 
 Example usage:
 ```
-import TruthTable from "@hckrnews/truth-table";
+import AndTruthTable from "@hckrnews/truth-table";
 
-const table = TruthTable.create(3);
+const table = AndTruthTable.create(3);
 ```
 
 Table inputs result:
@@ -45,7 +45,7 @@ Output:
 
 To receive results of the and operator:
 ```
-table.and
+table.output
 ```
 Output:
 ```
@@ -54,7 +54,7 @@ Output:
 
 Do you with te receive the result with the inputs of the and operator:
 ```
-table.andWithInputs
+table.result
 ```
 Output:
 ```
@@ -71,18 +71,12 @@ Output:
 ```
 
 All options:
-* and
-* andWithInputs
-* nand
-* nandWithInputs
-* or
-* orWithInputs
-* nor
-* norWithInputs
-* xor
-* xorWithInputs
-* xnor
-* xnorWithInputs
+* AndTruthTable
+* NandTruthTable
+* OrTruthTable
+* NorTruthTable
+* XoTruthTable
+* XnoTruthTable
 
 [npm-url]: https://www.npmjs.com/package/@hckrnews/truth-table
 [npm-image]: https://img.shields.io/npm/v/@hckrnews/truth-table.svg

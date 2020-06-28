@@ -1,4 +1,4 @@
-import TruthTable from '../../src/TruthTable.mjs';
+import { AndTruthTable } from '../../src/TruthTable.mjs';
 
 const TestCasesResult = [
     {
@@ -61,8 +61,8 @@ describe.each(TestCasesResult)(
     'Test and with inputs',
     ({ description, input, expectedResult }) => {
         it(description, () => {
-            const table = TruthTable.create(input);
-            expect(table.andWithInputs).toMatchObject(expectedResult);
+            const table = AndTruthTable.create(input);
+            expect(table.result).toMatchObject(expectedResult);
         });
     }
 );
