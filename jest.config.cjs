@@ -7,7 +7,7 @@ module.exports = {
         '^.+\\.cjs?$': 'babel-jest',
     },
 
-    transformIgnorePatterns: ['/node_modules/'],
+    transformIgnorePatterns: [],
 
     moduleNameMapper: {
         '^@/(.*)$': '<rootDir>/src/$1',
