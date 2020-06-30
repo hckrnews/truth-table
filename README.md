@@ -1,8 +1,8 @@
 # Truth Table package
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
-
 Generate a truth table very easy.
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
 ## Installation
 
@@ -77,6 +77,8 @@ All options:
 * NorTruthTable
 * XoTruthTable
 * XnoTruthTable
+* XandTruthTable
+* XnandTruthTable
 
 [npm-url]: https://www.npmjs.com/package/@hckrnews/truth-table
 [npm-image]: https://img.shields.io/npm/v/@hckrnews/truth-table.svg
