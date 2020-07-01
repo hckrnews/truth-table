@@ -1,13 +1,10 @@
-import { OrGate } from '@hckrnews/logic-gates';
+import { or } from '@hckrnews/logic-gates';
 import TruthTable from './BaseTruthTable.mjs';
 
 class OrTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => OrGate.create(row).output);
-        this.result = this.inputs.map(row => [
-            OrGate.create(row).output,
-            ...row,
-        ]);
+        this.output = this.inputs.map(row => or(row));
+        this.result = this.inputs.map(row => [or(row), ...row]);
     }
 }
 

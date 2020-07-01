@@ -79,6 +79,10 @@ All options:
 * XnoTruthTable
 * XandTruthTable
 * XnandTruthTable
+* NotTruthTable
+
+To check all used logic gates:
+https://www.npmjs.com/package/@hckrnews/logic-gates
 
 [npm-url]: https://www.npmjs.com/package/@hckrnews/truth-table
 [npm-image]: https://img.shields.io/npm/v/@hckrnews/truth-table.svg
