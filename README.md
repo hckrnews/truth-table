@@ -1,6 +1,7 @@
 # Truth Table package
 
 Generate a truth table very easy.
+The generated truth tables can be used for e.a. test cases, if you would test a lot of situations.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
