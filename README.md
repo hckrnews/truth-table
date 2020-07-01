@@ -1,6 +1,7 @@
 # Truth Table package
 
 Generate a truth table very easy.
+The generated truth tables can be used for e.a. test cases, if you would test a lot of situations.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
 
@@ -79,6 +80,10 @@ All options:
 * XnoTruthTable
 * XandTruthTable
 * XnandTruthTable
+* NotTruthTable
+
+To check all used logic gates:
+https://www.npmjs.com/package/@hckrnews/logic-gates
 
 [npm-url]: https://www.npmjs.com/package/@hckrnews/truth-table
 [npm-image]: https://img.shields.io/npm/v/@hckrnews/truth-table.svg

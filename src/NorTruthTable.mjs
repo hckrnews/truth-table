@@ -1,13 +1,10 @@
-import { NorGate } from '@hckrnews/logic-gates';
+import { nor } from '@hckrnews/logic-gates';
 import TruthTable from './BaseTruthTable.mjs';
 
 class NorTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => NorGate.create(row).output);
-        this.result = this.inputs.map(row => [
-            NorGate.create(row).output,
-            ...row,
-        ]);
+        this.output = this.inputs.map(row => nor(row));
+        this.result = this.inputs.map(row => [nor(row), ...row]);
     }
 }
 

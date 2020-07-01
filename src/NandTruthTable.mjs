@@ -1,13 +1,10 @@
-import { NandGate } from '@hckrnews/logic-gates';
+import { nand } from '@hckrnews/logic-gates';
 import TruthTable from './BaseTruthTable.mjs';
 
 class NandTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => NandGate.create(row).output);
-        this.result = this.inputs.map(row => [
-            NandGate.create(row).output,
-            ...row,
-        ]);
+        this.output = this.inputs.map(row => nand(row));
+        this.result = this.inputs.map(row => [nand(row), ...row]);
     }
 }
 

@@ -7,6 +7,7 @@ import XorTruthTable from './XorTruthTable.mjs';
 import XnorTruthTable from './XnorTruthTable.mjs';
 import XandTruthTable from './XandTruthTable.mjs';
 import XnandTruthTable from './XnandTruthTable.mjs';
+import NotTruthTable from './NotTruthTable.mjs';
 
 export default TruthTable;
 export {
@@ -18,4 +19,5 @@ export {
     XnorTruthTable,
     XandTruthTable,
     XnandTruthTable,
+    NotTruthTable,
 };
