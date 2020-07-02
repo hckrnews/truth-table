@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/truth-table",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Generate a truth table very easy.",
     "main": "src/TruthTable.mjs",
     "files": [
@@ -33,12 +33,12 @@
     "devDependencies": {
         "@babel/core": "^7.10.4",
         "@babel/preset-env": "^7.10.4",
-        "@hckrnews/eslint-config": "^0.2.0",
+        "@hckrnews/eslint-config": "^1.0.0",
         "babel-eslint": "^10.1.0",
         "babel-jest": "^26.1.0",
         "codecov": "^3.6.5",
         "coveralls": "^3.0.13",
-        "eslint": "^6.6.0",
+        "eslint": "^7.3.1",
         "eslint-config-airbnb": "^18.1.0",
         "eslint-config-prettier": "^6.11.0",
         "eslint-plugin-html": "^6.0.2",
@@ -49,7 +49,7 @@
         "eslint-plugin-vue": "^6.2.2",
         "jest": "^26.1.0",
         "jscpd": "^3.2.1",
-        "prettier": "1.19.1"
+        "prettier": "^2.0.5"
     },
     "repository": {
         "type": "git",
@@ -64,6 +64,6 @@
         "truth table"
     ],
     "dependencies": {
-        "@hckrnews/logic-gates": "^2.0.0"
+        "@hckrnews/logic-gates": "^2.0.2"
     }
 }
