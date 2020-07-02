@@ -13,9 +13,9 @@ export default class Helper {
             );
         }
 
-        return parseInt(number, 10)
-            .toString(2)
-            .padStart(propositions, '0');
+        const binary = parseInt(number, 10).toString(2);
+
+        return binary.padStart(propositions, '0');
     }
 
     static totalTrueInputs(row) {
