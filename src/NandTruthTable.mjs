@@ -3,8 +3,8 @@ import TruthTable from './BaseTruthTable.mjs';
 
 class NandTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => nand(row));
-        this.result = this.inputs.map(row => [nand(row), ...row]);
+        this.output = this.inputs.map((row) => nand(row));
+        this.result = this.inputs.map((row) => [nand(row), ...row]);
     }
 }
 

@@ -3,8 +3,8 @@ import TruthTable from './BaseTruthTable.mjs';
 
 class XorTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => xor(row));
-        this.result = this.inputs.map(row => [xor(row), ...row]);
+        this.output = this.inputs.map((row) => xor(row));
+        this.result = this.inputs.map((row) => [xor(row), ...row]);
     }
 }
 

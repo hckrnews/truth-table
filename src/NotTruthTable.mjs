@@ -3,8 +3,8 @@ import TruthTable from './BaseTruthTable.mjs';
 
 class NotTruthTable extends TruthTable {
     generateOutput() {
-        this.output = this.inputs.map(row => not(row));
-        this.result = this.inputs.map(row => [not(row), ...row]);
+        this.output = this.inputs.map((row) => not(row));
+        this.result = this.inputs.map((row) => [not(row), ...row]);
     }
 }
 
