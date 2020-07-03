@@ -54,7 +54,7 @@
         "url": "https://github.com/hckrnews/truth-table"
     },
     "engines": {
-        "node": ">=14"
+        "node": ">=12"
     },
     "keywords": [
         "truth",
