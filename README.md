@@ -3,7 +3,7 @@
 Generate a truth table very easy.
 The generated truth tables can be used for e.a. test cases, if you would test a lot of situations.
 
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Scrutinizer Code Quality][scrutinizer-image]][scrutinizer-url]
 
 ## Installation
 
@@ -91,3 +91,5 @@ https://www.npmjs.com/package/@hckrnews/logic-gates
 [travis-image]: https://img.shields.io/travis/hckrnews/truth-table/master.svg
 [coveralls-url]: https://coveralls.io/r/hckrnews/truth-table
 [coveralls-image]: https://img.shields.io/coveralls/hckrnews/truth-table/master.svg
+[scrutinizer-url]: https://scrutinizer-ci.com/g/hckrnews/truth-table/?branch=master
+[scrutinizer-image]: https://scrutinizer-ci.com/g/hckrnews/truth-table/badges/quality-score.png?b=master

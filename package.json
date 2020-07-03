@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/truth-table",
-    "version": "2.2.1",
+    "version": "2.2.2",
     "description": "Generate a truth table very easy.",
     "main": "src/TruthTable.mjs",
     "files": [
@@ -23,8 +23,7 @@
     "scripts": {
         "test": "jest",
         "lint": "eslint .",
-        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-        "cpd": "node_modules/jscpd/bin/jscpd src"
+        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
     },
     "author": {
         "name": "Pieter Wigboldus",
@@ -48,7 +47,6 @@
         "eslint-plugin-react": "^7.20.3",
         "eslint-plugin-vue": "^6.2.2",
         "jest": "^26.1.0",
-        "jscpd": "^3.2.1",
         "prettier": "^2.0.5"
     },
     "repository": {
@@ -64,6 +62,6 @@
         "truth table"
     ],
     "dependencies": {
-        "@hckrnews/logic-gates": "^2.0.2"
+        "@hckrnews/logic-gates": "^2.0.3"
     }
 }
