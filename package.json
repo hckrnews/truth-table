@@ -22,8 +22,7 @@
     "license": "AGPL-3.0",
     "scripts": {
         "test": "jest",
-        "lint": "eslint .",
-        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+        "lint": "eslint ."
     },
     "author": {
         "name": "Pieter Wigboldus",
@@ -35,8 +34,6 @@
         "@hckrnews/eslint-config": "^1.0.0",
         "babel-eslint": "^10.1.0",
         "babel-jest": "^26.3.0",
-        "codecov": "^3.7.2",
-        "coveralls": "^3.0.13",
         "eslint": "^7.9.0",
         "eslint-config-airbnb": "^18.1.0",
         "eslint-config-prettier": "^6.11.0",
