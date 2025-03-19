@@ -36,7 +36,7 @@
         "babel-jest": "^26.3.0",
         "eslint": "^7.9.0",
         "eslint-config-airbnb": "^19.0.0",
-        "eslint-config-prettier": "^9.0.0",
+        "eslint-config-prettier": "^10.0.0",
         "eslint-plugin-html": "^8.0.0",
         "eslint-plugin-import": "^2.22.0",
         "eslint-plugin-jsx-a11y": "^6.2.3",
